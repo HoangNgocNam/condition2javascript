@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>do you love me</title>
+    <style>
+        body {
+            margin: auto;
+        }
+
+        h1 {
+            color: deeppink;
+            position: absolute;
+            left: 355px;
+            top: 300px;
+        }
+
+        #cYes {
+            position: absolute;
+            left: 400px;
+            top: 380px;
+        }
+
+        #caNo {
+            position: absolute;
+            left: 480px;
+            top: 380px;
+        }
+    </style>
+</head>
+<body>
+<h1>Do you love me?</h1>
+<form>
+    <input type="button" value="Yes" onclick="yes()" id="cYes">
+    <input type="button" value="No" onmouseover="noCatch()" id="caNo">
+</form>
+</body>
+</html>
+<script>
+    function yes() {
+        alert("Vâng! bạn thấy thế nào?");
+    }
+    function noCatch() {
+       let x = Math.fround(Math.random() * window.innerWidth);
+       let y = Math.fround(Math.random() * window.innerHeight);
+        document.getElementById('caNo').style.left = x + 'px';
+        document.getElementById('caNo').style.top = y + 'px';
+    }
+</script>
