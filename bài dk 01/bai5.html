@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <h3>Nhập điểm từ 0 ===> 100</h3>
+    <tr>
+        <th>Điểm thi giữa kỳ</th>
+        <th>Điểm thi cuối kỳ</th>
+        <th>trung bình</th>
+    </tr>
+    <tr>
+        <td><input type="text" id="a"></td>
+        <td><input type="text" id="b"></td>
+        <td>
+            <button onclick="clickMy()">medium</button>
+        </td>
+    </tr>
+</table>
+<script>
+    function clickMy() {
+        let diem_a = parseInt(document.getElementById("a").value);
+        let diem_b = parseInt(document.getElementById("b").value);
+        medium = (diem_a + diem_b)/2;
+        if ( medium > 80 ) {
+            document.write('loại A');
+        } else if ( medium < 80 && medium >=65 ) {
+            document.write('loại B');
+        } else if ( medium < 65 && medium > 50 ) {
+            document.write('loại C');
+        } else {
+            document.write('loại E');
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let numberA = parseInt(prompt('nhập  A: '));
+    let numberB = parseInt(prompt('nhập  B: '));
+    let numberC = parseInt(prompt('nhập  C: '));
+    if ( numberA > 0 && numberB > 0 && numberC > 0){
+        if ( numberA + numberB > numberC || numberA + numberC > numberB || numberC + numberB > numberA) {
+            alert('là cạnh của tam giác');
+        } else {
+            alert('ko là cạnh tam giác');
+        }
+    }
+
+</script>
+</body>
+</html>

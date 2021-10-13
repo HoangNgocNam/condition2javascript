@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let salary = prompt('nhập tiền lương: ');
+    let tax1 = salary*1/10;
+    let tax2 = salary*1/15;
+    let tax3 = salary*1/20;
+    if ( salary > 20000000) {
+        alert('số tiền thuế là: ' +tax1);
+    } else  if ( salary > 12000000) {
+        alert('số tiền thuế là: ' + tax2);
+    } else if ( salary > 5000000) {
+        alert('sơ tiền thuế là: ' +tax3);
+    }else {
+        alert('không nôp: ');
+    }
+</script>
+</body>
+</html>

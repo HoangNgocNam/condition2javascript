@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let money = prompt('nhap so tien:');
+    let month = prompt(' số tháng cho vay: ');
+    let lai1 = money*1/10;
+    let lai2 = money*1/8;
+    let lai3 = money*1/6;
+    if ( month > 12) {
+        alert('sô tiền lãi là : ' +lai3);
+    } else if ( month > 6 ) {
+        alert('số tiền lãi là: ' +lai2);
+    } else {
+        alert('số tiền lãi là: ' +lai1);
+    }
+</script>
+</body>
+</html>
