@@ -60,14 +60,14 @@
 </html>
 <script>
     function add1(value) {
-        document.getElementById('result').value = document.getElementById('result').value + value;
+        document.getElementById('result').value += value;
         // console.log(value)
         // eval()
     }
 
     function step1() {
-        let result = eval(document.getElementById('result').value);
-        document.getElementById('result').value = result;
+        // let result = eval(document.getElementById('result').value);
+        document.getElementById('result').value = eval(document.getElementById('result').value);
     }
 
 </script>
