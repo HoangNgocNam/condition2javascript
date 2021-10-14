@@ -7,12 +7,12 @@
 <body>
 <script>
     let soul;
-    soul = "<table border='1px solid' weight ='1000px' cellpadding='3px' cellspacing='0'>";
-    for (var i = 1; i <= 9; i++) {
+    soul = "<table style='border: 1px solid; width: 800px; height: 500px; border-collapse: collapse; text-align:center'>";
+    for (let i = 1; i <= 9; i++) {
         soul = soul + "<tr>";
-        for (var j = 1; j < 10; j++) {
+        for (let j = 1; j < 10; j++) {
             product = j * i;
-            soul = soul + "<td>" + j + "x" + i + "=" + product + "</td>";
+            soul = soul + "<td style='border: 1px solid; border-collapse: collapse'>" + j + "x" + i + "=" + product + "</td>";
         }
         soul = soul + "</tr>";
     }
