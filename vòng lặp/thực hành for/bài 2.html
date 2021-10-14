@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <label> nhập số <input type="text" id="number"></label>
+    <input type="button" value="total" onclick="check()">
+    <p id="result"></p>j
+</form>
+<script>
+    function check() {
+        let number = document.getElementById("number").value;
+        let total = 0;
+        let i = 1;
+        for (; i <= number; i += 1) {
+            total += i;
+        }
+        document.getElementById("result").innerHTML = "result: " + total;
+    }
+</script>
+</body>
+</html>
