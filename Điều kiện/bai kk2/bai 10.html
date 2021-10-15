@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let electricnumber = prompt('nhập số điện : ');
+    a = parseInt(electricnumber);
+    let bac1 = 6;
+    let bac2 = 4;
+    let bac3 = 2;
+    if ( a >200 ) {
+        total = ((a-200)*bac3 + (120*bac2) + (80*bac1));
+    }else if (a < 200 && a > 80 ) {
+        total = ((a-80)*bac2 + (80*bac1));
+    } else {
+        total = (a*bac1);
+    }
+</script>
+</body>
+</html>
