@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="tuDien">
+<input type="button" value="dịch" onclick="check()">
+<p id="result"></p>
+<script>
+    function check() {
+        let nhap = document.getElementById("tuDien").value;
+        let tiengViet = ["xin chào", "chào", "quả táo", "mầu vàng"];
+        let engLing = ["hello", "hi", "apple", "yellow"];
+        let flag = true;
+        for (let i = 0; i < tiengViet.length; i++) {
+
+            if (tiengViet[i] === nhap) {
+                flag = false
+                document.getElementById('result').innerHTML = engLing[i];
+                break;
+            }
+            if (engLing[i] === nhap) {
+                flag = false
+                document.getElementById('result').innerHTML = tiengViet[i];
+                break;
+            }
+        }
+        if (flag === true) {
+            document.getElementById('result').innerHTML = "không có trong từ điển";
+        }
+    }
+</script>
+</body>
+</html>

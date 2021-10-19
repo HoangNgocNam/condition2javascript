@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number = [1, 2, -4, -6, 5, -8, 9, -10, 11, 14];
+    let check;
+    for (let i = 0; i < number.length; i++) {
+        for (let j = i + 1; j < number.length; j++) {
+            if (number[i] > number[j]) {
+                check = number[i];
+                number[i] = number[j];
+                number[j] = check;
+            }
+        }
+    }
+    for (let i = 0; i < number.length; i++) {
+        document.write(number[i] + ",")
+    }
+
+</script>
+</body>
+</html>

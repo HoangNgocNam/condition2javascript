@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // let arr =  [ 'c', 's', 'c', '2', '6', '1' ];
+    // let arr1 = arr.reverse();
+    // document.write(arr1);
+
+    // let arr =  [ 'c', 's', 'c', '2', '6', '1' ];
+    // let check;
+    // for (let i = 0; i < arr.length - 1; i++) {
+    //     for (let j = arr.length - 1; j >= i; j--) {
+    //         if (arr[i] > arr[j]){
+    //             check = arr[i];
+    //             arr[i] = arr[j];
+    //             arr[j] = check;
+    //         }
+    //     }
+    // }
+    // for (let i = 0; i < arr.length; i++) {
+    //     document.write(arr[i] + ",");
+    // }
+
+    // let arr = ['c', 's', 'a', '2', '6', '1'];
+    // for (let i = 0; i < arr.length/2; i++) {
+    //     let check = arr[i];
+    //     arr[i] = arr[(arr.length - 1) - i];
+    //     arr[(arr.length - 1) - i] = check;
+    // }
+    //
+    // document.write(arr.join(", "))
+    // for (let i = 0; i < arr.length ; i++) {
+    //     document.write(arr[i] + ",");
+    // }
+
+
+
+
+    let arr = ['c', 's', 'a', '2', '6', '1'];
+    let clast = 0;
+    let name = arr[(arr.length - 1)-1];
+    while (clast < name){
+        let b = arr[clast];
+        arr[clast] = arr[name];
+        arr[name] = b;
+        clast ++;
+        name--;
+    }
+    document.write(arr + ",");
+
+</script>
+</body>
+</html>

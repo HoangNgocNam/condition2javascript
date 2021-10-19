@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="nhập">
+<input type="text" id="xoa">
+<input type="button" value="Nhập" onclick="display()">
+<input type="button" value="xoa" onclick="delete()">
+<div id="total1"></div>
+<script>
+
+    let num = [1, 2, -4, -6, 5, -8, 9, -10, 11, 14];
+    let nhap = [];
+
+    function display() {
+        nhap = document.getElementById("nhập").value;
+        num.push(nhap);
+        let flag = true;
+        for (let i = 0; i < num.length; i++) {
+            if (nhap > 0 && nhap % 1 === 0){
+                flag = false;
+                // document.getElementById('total1').innerText = 'V is in the array'
+                num.pop();
+                num.push(0);fd
+
+            }
+
+        }
+    }
+
+</script>
+</body>
+</html>
