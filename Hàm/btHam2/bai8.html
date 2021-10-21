@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = prompt("nhập mảng: ")
+    arr = arr.split("")
+    function island() {
+        for (let i = 0; i < arr.length / 2; i++) {
+            let check = arr[i];
+            arr[i] = arr[(arr.length - 1) - i];
+            arr[(arr.length - 1) - i] = check;
+        }
+        for (let i = 0; i < arr.length ; i++) {
+            document.write(arr[i] + ",");
+        }
+    }
+    island(arr)
+</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let inputNumber = prompt('Nhập số phần tử');
+  let arrayString = new Array(inputNumber);
+  for (let i = 0; i < inputNumber; i++) {
+    arrayString[i] = prompt('Nhập a[i]' + ' ' + 'i=' + i)
+  }
+  for (let i=0;i<inputNumber;i++) {
+    if (arrayString[i]==="-") {
+      arrayString[i]="_";
+    }
+  }
+  document.write(arrayString);
+</script>
+</body>
+</html>

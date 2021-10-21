@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = ["a", "b", "r", "h"];
+    let input = prompt("nhập vào 1 kí tự: ")
+
+    function display(array) {
+        let count = 0;
+        for (let i = 0; i < array.length; i++) {
+            if (input === array[i]) {
+                count++
+            }
+        }
+        if (count !== 0) {
+            alert(count)
+        } else {
+            alert(-1)
+        }
+    }
+
+    display(arr)
+</script>
+</body>
+</html>

@@ -5,31 +5,37 @@
     <title>Title</title>
 </head>
 <body>
-<input type="text" id="nhập">
-<input type="text" id="xoa">
-<input type="button" value="Nhập" onclick="display()">
-<input type="button" value="xoa" onclick="delete()">
-<div id="total1"></div>
 <script>
+    let number2 = +prompt("Nhập số nguyên V: ");
+    let numbers = +prompt("Nhập số phần tử trong mảng: ");
+    let arr = [];
 
-    let num = [1, 2, -4, -6, 5, -8, 9, -10, 11, 14];
-    let nhap = [];
-
-    function display() {
-        nhap = document.getElementById("nhập").value;
-        num.push(nhap);
-        let flag = true;
-        for (let i = 0; i < num.length; i++) {
-            if (nhap > 0 && nhap % 1 === 0){
-                flag = false;
-                // document.getElementById('total1').innerText = 'V is in the array'
-                num.pop();
-                num.push(0);fd
-
-            }
-
-        }
+    for (let i = 0; i < numbers; i++) {
+        let number1 = +prompt("nhập phần tử: ")
+        arr[i] = number1;
+        document.write(arr[i] + ", ");
     }
+    document.write("<br>");
+
+    let count = 0;
+    for (let i = 0; i < arr.length; i++) {
+        if (number2 === arr[i]) {
+            count++;
+            for (let j = i; j < arr.length - count; j++) {
+                arr[j] = arr[j + 1];
+                i--
+            }
+        }
+
+    }
+    for (let i = 0; i < arr.length - count; i++) {
+        document.write(arr[i] + " ,");
+    }
+    for (let i = arr.length - count; i < arr.length; i++) {
+        arr[i] = 0;
+        document.write(arr[i] + ",");
+    }
+
 
 </script>
 </body>
