@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>kiem tra doi xung</title>
+</head>
+<body>
+<script>
+    function isPaLindrome(str){
+        for (let i = 0; i < str.length/2; i++) {
+            if  (str[i] !== str[str.length - 1 -i]){
+              return false
+            }
+        }
+        return true
+    }
+    let strInput = prompt("nhap chuoi: ")
+    if  (isPaLindrome(strInput)){
+        alert("day la chuoi doi xung.")
+    } else {
+        alert("day khong la chuoi doi xung.")
+    }
+</script>
+</body>
+</html>
