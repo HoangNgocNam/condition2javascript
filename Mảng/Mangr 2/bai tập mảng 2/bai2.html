@@ -10,20 +10,20 @@
     // let arr1 = arr.reverse();
     // document.write(arr1);
 
-    // let arr =  [ 'c', 's', 'c', '2', '6', '1' ];
-    // let check;
-    // for (let i = 0; i < arr.length - 1; i++) {
-    //     for (let j = arr.length - 1; j >= i; j--) {
-    //         if (arr[i] > arr[j]){
-    //             check = arr[i];
-    //             arr[i] = arr[j];
-    //             arr[j] = check;
-    //         }
-    //     }
-    // }
-    // for (let i = 0; i < arr.length; i++) {
-    //     document.write(arr[i] + ",");
-    // }
+    let arr =  [9,4,6,7,3,5,1,17,34 ];
+    let check;
+    for (let i = 0; i < arr.length - 1; i++) {
+        for (let j = arr.length - 1; j >= i; j--) {
+            if (arr[i] < arr[j]){
+                check = arr[i];
+                arr[i] = arr[j];
+                arr[j] = check;
+            }
+        }
+    }
+    for (let i = 0; i < arr.length; i++) {
+        document.write(arr[i] + ",");
+    }
 
     // let arr = ['c', 's', 'a', '2', '6', '1'];
     // for (let i = 0; i < arr.length/2; i++) {
@@ -40,17 +40,17 @@
 
 
 
-    let arr = ['c', 's', 'a', '2', '6', '1'];
-    let clast = 0;
-    let name = arr[(arr.length - 1)-1];
-    while (clast < name){
-        let b = arr[clast];
-        arr[clast] = arr[name];
-        arr[name] = b;
-        clast ++;
-        name--;
-    }
-    document.write(arr + ",");
+    // let arr = ['c', 's', 'a', '2', '6', '1'];
+    // let clast = 0;
+    // let name = arr[(arr.length - 1)-1];
+    // while (clast < name){
+    //     let b = arr[clast];
+    //     arr[clast] = arr[name];
+    //     arr[name] = b;
+    //     clast ++;
+    //     name--;
+    // }
+    // document.write(arr + ",");
 
 </script>
 </body>
