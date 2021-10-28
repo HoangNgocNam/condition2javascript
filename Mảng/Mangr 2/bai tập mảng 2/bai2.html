@@ -25,17 +25,17 @@
         document.write(arr[i] + ",");
     }
 
-    // let arr = ['c', 's', 'a', '2', '6', '1'];
-    // for (let i = 0; i < arr.length/2; i++) {
-    //     let check = arr[i];
-    //     arr[i] = arr[(arr.length - 1) - i];
-    //     arr[(arr.length - 1) - i] = check;
-    // }
-    //
-    // document.write(arr.join(", "))
-    // for (let i = 0; i < arr.length ; i++) {
-    //     document.write(arr[i] + ",");
-    // }
+    let arr = ['c', 's', 'a', '2', '6', '1'];
+    for (let i = 0; i < arr.length/2; i++) {
+        let check = arr[i];
+        arr[i] = arr[(arr.length - 1) - i];
+        arr[(arr.length - 1) - i] = check;
+    }
+
+    document.write(arr.join(", "))
+    for (let i = 0; i < arr.length ; i++) {
+        document.write(arr[i] + ",");
+    }
 
 
 

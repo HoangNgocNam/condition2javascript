@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="game" width="400" height="400"></canvas>
+<script>
+    width = 20;
+    unit = 20;
+    snack = [];
+    head_x = 10;
+    head_y = 10;
+    snack_length = 1;
+    denta_x = 0;
+    denta_y = 0;
+    foot_x = 15;
+    foot_y = 15;
+
+    window.onloat = function () {
+        canv = document.getElementById('game');
+        ctx = canv.getContext("2d");
+        document.addEventListener("keydown", button_handle);
+
+
+        set = setInterval(game, 100);
+    }
+
+    function button_handle(key) {
+        switch (key.keycode) {
+            case 37:
+                denta_x = -1;
+                denta_y = 0;
+                break
+
+            case 38:
+                denta_x = 0;
+                denta_y = -1;
+                break
+
+
+            case 39:
+                denta_x = 1;
+                denta_y = 0;
+                break
+
+
+            case 40:
+                denta_x = 0;
+                denta_y = 1;
+                break
+
+        }
+    }
+
+
+    function game() {
+
+        head_x = head_x + denta_x;
+        head_y = head_y + denta_y;
+        if (head_x < 0) {
+            head_x = width - 1;
+        }
+        if (head_y < 0) {
+            head_y = width - 1;
+        }
+        if (head_x > width - 1) {
+            head_x = 0;
+        }
+        if (head_Y > width - 1) {
+            head_x = 0;
+        }
+
+
+        ctx.fillstyle = "black";
+        ctx.fillRect(0, 0, canv.width, canv.height);
+        for (let i = 0; i < snack.length; i++){
+            ctx.fillstyle = "yellow";
+            cxt.fillRect(snack[i].x*unit,snack[i].y*unit,unit-2,unit-2);
+        }
+        snack.push((x:head_x,y:head_y));
+    }
+
+</script>
+</body>
+</html>
